@@ -4,7 +4,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 :root{
     --primary-color: #0066cc;
@@ -75,7 +75,7 @@ nav a:hover::after{
         }
 /*header logo*/
     .logo span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Momo Trust Display", sans-serif;
     font-size: 1.5rem; 
     font-weight: 800;
     color: #fff; 
@@ -127,6 +127,7 @@ nav a:hover::after{
     margin-bottom: 20px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Momo Trust Display", sans-serif;
 }
 /*header responsiveness*/
 @media (max-width: 768px) {
@@ -187,6 +188,7 @@ nav ul.active{
 }
 h3{
     color: #1a5f3f;
+    font-family: "Momo Trust Display", sans-serif;
 }
 .section-container{
     min-height: 100vh;
