@@ -175,6 +175,7 @@ nav ul.active{
     color: #1a5f3f;
     position: relative;
     padding-bottom: 15px;
+     font-family: "Momo Trust Display", sans-serif;
 }
 .custom-title::after{
     content: '';
@@ -341,7 +342,7 @@ h3{
             font-weight: 900;
             margin-bottom: 30px;
             line-height: 1.1;
-            color: #000;
+            color: red;
         }
 
         h2 {
@@ -460,6 +461,94 @@ h3{
 
             .part3 .overlay p {
                 font-size: 0.9rem;
+            }
+        }
+/*****************************************************Testimonial****************************************/
+.testimonials-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+       
+
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            align-items: start;
+        }
+
+        .testimonial-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-name {
+            font-size: 1.15rem;
+            font-weight: 100;
+            color: #1a5f3fda;
+            margin-bottom: 5px;
+        }
+
+        .client-position {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+            max-width: 350px;
+        }
+
+        @media (max-width: 768px) {
+            .custom-title {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                margin-bottom: 40px;
+            }
+
+            .testimonials-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .client-name {
+                font-size: 1.15rem;
+            }
+
+            .client-position {
+                font-size: 0.9rem;
+            }
+
+            .testimonial-text {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .testimonials-container {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
