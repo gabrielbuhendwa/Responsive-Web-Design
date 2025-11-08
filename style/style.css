@@ -57,7 +57,7 @@ nav a::after{
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ffda79;
+    background-color: #1a5f3f;
     transition: all 0.3s ease;
 }
 nav a:hover::after{
@@ -148,11 +148,10 @@ nav ul.active{
     font-size: 2rem;
     }
 }
-/*****************************************************section of services****************************************/
+/*****************************************************services section****************************************/
 .block-part{
      width: 100%;
      color: black;
-  
 }
 .custom-title{
     text-align: center;
@@ -162,7 +161,7 @@ nav ul.active{
     color: #1a5f3f;
     position: relative;
     padding-bottom: 15px;
-     font-family: "Momo Trust Display", sans-serif;
+    font-family: "Momo Trust Display", sans-serif;
 }
 .custom-title::after{
     content: '';
@@ -582,34 +581,32 @@ footer{
     }
 }
 /**********************************************scroll button behavior******************************************************/
-        .scroll-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #1a5f3f;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-            z-index: 999;
-        }
-
-        .scroll-top.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            background-color: #062c1ace;
-            transform: translateY(-5px);
-        }
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #1a5f3f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+}
+.scroll-top.active{
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-top:hover{
+    background-color: #062c1ace;
+    transform: translateY(-5px);
+}
 
        

@@ -14,7 +14,44 @@ document.querySelectorAll('#nav-menu a').forEach(link => {
 
 
 
+//nav links scrolling behavior
+const navLinks = document.querySelectorAll('#nav-menu a');
+const header = document.querySelector('nav');
 
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const targetId = link.getAttribute('href');
+
+      if (targetId === '#home'){
+        // Scroll to top
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      else
+        {
+        const targetSection = document.querySelector(targetId);
+
+        let headerOffset = header.offsetHeight + 20;
+        if (targetId === '#services'){
+          headerOffset = header.offsetHeight + 90;
+        }
+
+        const sectionPosition = targetSection.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+  
 //Scroll to top button
 const scrollTopBtn = document.getElementById('scroll-top');
 
@@ -32,3 +69,5 @@ scrollTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
