@@ -116,7 +116,7 @@ nav a:hover::after{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Momo Trust Display", sans-serif;
 }
-/*header responsiveness*/
+/***Responsive part***/
 @media (max-width: 768px) {
 nav ul{
     display: none;
@@ -380,185 +380,160 @@ h3{
     }
 }
 /*******************************************************************************Testimonials***********************************************************/
-.testimonials-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-    
-        }
+.testimonials-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.testimonials-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.profile-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.client-name{
+    font-size: 1.15rem;
+    font-weight: 100;
+    color: #1a5f3fda;
+    margin-bottom: 5px;
+}
+.client-position{
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+.testimonial-text{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 350px;
+}
+/***Responsive part***/
+@media (max-width: 768px){
+.custom-title{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
 
-       
-
-        .testimonials-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            align-items: start;
-        }
-
-        .testimonial-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .profile-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .client-name {
-            font-size: 1.15rem;
-            font-weight: 100;
-            color: #1a5f3fda;
-            margin-bottom: 5px;
-        }
-
-        .client-position {
-            font-size: 0.95rem;
-            color: #888;
-            margin-bottom: 20px;
-        }
-
-        .testimonial-text {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #666;
-            max-width: 350px;
-        }
-
-        @media (max-width: 768px) {
-            .custom-title {
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-                margin-bottom: 40px;
-            }
-
-            .testimonials-container {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
-
-            .profile-image {
-                width: 100px;
-                height: 100px;
-            }
-
-            .client-name {
-                font-size: 1.15rem;
-            }
-
-            .client-position {
-                font-size: 0.9rem;
-            }
-
-            .testimonial-text {
-                font-size: 0.95rem;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .testimonials-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-/*****************************************************Contact us****************************************/
-footer {
-            background: linear-gradient(135deg, #90d5d3 0%, #6fc4c1 100%);
-            padding: 60px 20px 40px;
-            text-align: center;
-        }
-
-        .newsletter-container {
-            max-width: 500px;
-            margin: 0 auto 50px;
-        }
-
-        .newsletter-label {
-            display: block;
-            font-size: 1rem;
-            color: #2c5f5f;
-            margin-bottom: 15px;
-            font-weight: 500;
-        }
-
-        .email-form {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .email-input {
-            flex: 1;
-            min-width: 250px;
-            padding: 14px 20px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1rem;
-            outline: none;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .email-input:focus {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .submit-btn {
-            padding: 14px 35px;
-            background-color:#1a5f3f;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .submit-btn:hover {
-            background-color: #1a5f3fd0;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
-
-        .social-icon {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(44, 122, 123, 0.2);
-            border-radius: 50%;
-            color: #1a5f3f;
-            font-size: 1.5rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-icon:hover {
-            background-color: #1a5f3f;
-            color: white;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-.footer-bottom {
+.testimonials-container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.profile-image{
+    width: 100px;
+    height: 100px;
+}
+.client-name{
+    font-size: 1.15rem;
+}
+.client-position{
+    font-size: 0.9rem;
+}
+.testimonial-text{
+    font-size: 0.95rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+.testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+/**********************************************************Contact us******************************************/
+footer{
+    background: linear-gradient(135deg, #90d5d3 0%, #6fc4c1 100%);
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+.newsletter-container{
+    max-width: 500px;
+    margin: 0 auto 50px;
+}
+.newsletter-label{
+    display: block;
+    font-size: 1rem;
+    color: #2c5f5f;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.email-form{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.email-input{
+    flex: 1;
+    min-width: 250px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.email-input:focus{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.submit-btn{
+    padding: 14px 35px;
+    background-color:#1a5f3f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.submit-btn:hover{
+    background-color: #1a5f3fd0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.social-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(44, 122, 123, 0.2);
+    border-radius: 50%;
+    color: #1a5f3f;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.social-icon:hover{
+    background-color: #1a5f3f;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.footer-bottom{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,52 +545,42 @@ footer {
     color: #2c5f5f;
     font-size: 0.9rem;
 }
-
-
-
-
-        @media (max-width: 768px) {
-            .footer-title {
-                font-size: 2rem;
-                margin-bottom: 40px;
-            }
-
-            .email-form {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .email-input {
-                min-width: 100%;
-            }
-
-            .submit-btn {
-                width: 100%;
-            }
-
-            .social-links {
-                gap: 20px;
-            }
-
-            .social-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 1.3rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            footer {
-                padding: 40px 15px 30px;
-            }
-
-            .footer-title {
-                font-size: 1.8rem;
-            }
-
-            .newsletter-label {
-                font-size: 0.95rem;
-            }
-        }
+/***Responsive part***/
+@media (max-width: 768px){
+.footer-title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.email-form{
+    flex-direction: column;
+    align-items: stretch;
+}
+.email-input{
+     min-width: 100%;
+}
+.submit-btn{
+    width: 100%;
+}
+.social-links{
+    gap: 20px;
+}
+.social-icon{
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    }
+}
+@media (max-width: 480px){
+footer{
+    padding: 40px 15px 30px;
+}
+.footer-title{
+    font-size: 1.8rem;
+}
+.newsletter-label{
+    font-size: 0.95rem;
+    }
+}
+/**********************************************End******************************************************/
 
        
