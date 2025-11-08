@@ -6,15 +6,6 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
-:root{
-    --primary-color: #0066cc;
-    --secondary-color: #f8f9fa;
-    --accent-color: #00a0e3;
-    --text-color: #f8f9fa;
-    --light-text: #fff;
-    --dark-blue: #003366;
-    --transition: all 0.3s ease;
-    }
 
 html{
     scroll-behavior: smooth;
@@ -22,7 +13,7 @@ html{
 
 body{
     line-height: 1.6;
-    color: var(--text-color); 
+    color: #f8f9fa;
       background-color: #F5F5F5;  
 }
 .container{
@@ -41,7 +32,7 @@ header{
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 .header-content{
     display: flex;
@@ -55,9 +46,9 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: var(--text-color);
+    color: #f8f9fa;
     font-weight: 500;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     position: relative;
 }
 nav a::after{
@@ -68,7 +59,7 @@ nav a::after{
     width: 0;
     height: 2px;
     background-color: #ffda79;
-    transition: var(--transition);
+    transition: all 0.3s ease;
 }
 nav a:hover::after{
     width: 100%;
@@ -115,7 +106,7 @@ nav a:hover::after{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: var(--light-text);
+    color: #fff;
     width: 90%;
     max-width: 700px;
     animation: fadeInUp 1s ease;
@@ -468,6 +459,7 @@ h3{
             max-width: 1200px;
             margin: 0 auto;
             padding: 60px 20px;
+    
         }
 
        
