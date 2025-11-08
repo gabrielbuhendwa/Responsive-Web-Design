@@ -14,7 +14,8 @@ html{
 body{
     line-height: 1.6;
     color: #f8f9fa;
-      background-color: #F5F5F5;  
+    background-color: #F5F5F5;  
+    width: 100%;
 }
 .container{
     width: 100%;
@@ -22,8 +23,6 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Header Styles */
 header{
     background-color: #3EBFFF;
     padding: 25px 0;
@@ -63,9 +62,9 @@ nav a::after{
 }
 nav a:hover::after{
     width: 100%;
-        }
-/*header logo*/
-    .logo span {
+}
+
+.logo span {
     font-family: "Momo Trust Display", sans-serif;
     font-size: 1.5rem; 
     font-weight: 800;
@@ -75,8 +74,6 @@ nav a:hover::after{
     position: relative;
     transition: all 0.3s ease;
 }
-
-/* A subtle glow + scaling hover effect */
 .logo span:hover {
     color: #ffda79;
     transform: scale(1.05);
@@ -90,7 +87,7 @@ nav a:hover::after{
     color: #fff;
     cursor: pointer;
 }
-/* Hero Section */
+/****************************************************************Hero Section***********************************************************************/
 .hero{
     position: relative;
     height: 100vh;
@@ -112,7 +109,6 @@ nav a:hover::after{
     animation: fadeInUp 1s ease;
     z-index: 2;
 }
-       
 .hero-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -188,12 +184,10 @@ h3{
     grid-template-columns: 1fr 1fr;
     transition: all 0.3s ease;
 }
-
-/* Part 1 - Transform your brand */
 .part1{
     background: #f5f5f5;
 }
-.part1 .text-content {
+.part1 .text-content{
     background: #f5f5f5;
     padding: 80px 60px;
     display: flex;
@@ -201,7 +195,7 @@ h3{
     justify-content: center;
     align-items: flex-start;
 }
-.part1 .image-content {
+.part1 .image-content{
    background-image: url("/images/image-transform.jpg");
     background-size: cover;       /* makes it fill the div */
     background-position: center;  /* centers the image */
@@ -214,43 +208,14 @@ h3{
     height: 100%; 
     overflow: hidden;
 }
-
-        /* .part1 .sphere {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 100%);
-            border-radius: 50%;
-            box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.2);
-            position: relative;
-            animation: float 6s ease-in-out infinite;
-        } */
-
-        /* @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        } */
-
-        /* Part 2 - Stand out */
 .part2{
     background: #fff;
 }
-
-/* .part2 .image-content{
-    background: #FF7D6D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%; 
-    height: 100%; 
-    overflow: hidden;
-} */
-
-.part2 .image-content {
+.part2 .image-content{
     background-image: url("/images/image-stand-out.jpg");
-    background-size: cover;       /* makes it fill the div */
-    background-position: center;  /* centers the image */
-    background-repeat: no-repeat; /* prevents tiling */
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,7 +224,6 @@ h3{
     height: 100%; 
     overflow: hidden;
 }
-
 .part2 .text-content{
     background: #fff;
     padding: 80px 60px;
@@ -268,193 +232,154 @@ h3{
     justify-content: center;
     align-items: flex-start;
 }
-
-/* Part 3 - Bottom sections */
-   .part3 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 100vh;
-        }
-
-        .part3 .subsection {
-       max-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            position: relative;
-        }
-       
-        .part3 .image-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .part3 .image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
-
-        .part3 .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 50px 40px; 
-            text-align: center;
-            z-index: 2;
-        }
-
-        .part3 .graphic-design .overlay {
-            color: #1a5f3f;
-        }
-
-        .part3 .photography .overlay {
-            color: #003d5c;
-        } 
-
-
-.part3 .graphic-design .overlay {
+.part3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+.part3 .subsection{
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+.part3 .image-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.part3 .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+.part3 .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px 40px; 
+    text-align: center;
+    z-index: 2;
+}
+.part3 .graphic-design .overlay{
     color: #1a5f3f;
 }
-
+.part3 .photography .overlay{
+    color: #003d5c;
+} 
+.part3 .graphic-design .overlay{
+    color: #1a5f3f;
+}
 .part3 .photography .overlay {
     color: #003d5c;
 }
+h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
 
-        /* Typography */
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 30px;
-            line-height: 1.1;
-            color: red;
-        }
+h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.1;
+    color: #000;
+}
 
-        h2 {
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 30px;
-            line-height: 1.1;
-            color: #000;
-        }
-
-        h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 30px;
-            max-width: 500px;
-        }
-
-        .part3 .overlay p {
-            color: inherit;
-            margin: 0 auto;
-        }
-
-        .learn-more {
-            color: #0047ab;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-decoration: none;
-            border-bottom: 3px solid #0047ab;
-            padding-bottom: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .learn-more:hover {
-            color: #003380;
-            border-bottom-color: #003380;
-            transform: translateY(-2px);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 968px) {
-            .section-container {
-                grid-template-columns: 1fr;
-            }
-
-            .part1 .text-content {
-                order: 2;
-            }
-
-            .part1 .image-content {
-                order: 1;
-                min-height: 50vh;
-            }
-
-            .part2 .image-content {
-                order: 1;
-                min-height: 50vh;
-            }
-
-            .part2 .text-content {
-                order: 2;
-            }
-
-            .part3 {
-                grid-template-columns: 1fr;
-                min-height: auto;
-            }
-
-            .part3 .subsection {
-                min-height: 50vh;
-                max-width: 100%;
-              
-               
-            }
-
-            .part3 .image-container {
-                width: 100%;
-            }
-
-            h1, h2 {
-                font-size: 2.5rem;
-            }
-
-            h3 {
-                font-size: 1.75rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            h1, h2 {
-                font-size: 2rem;
-            }
-
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            /* .text-content, .part3 .subsection {
-                padding: 40px 30px;
-            } */
-
-            .part3 .overlay {
-                padding: 30px 20px;
-            } 
-
-            .part3 .overlay h3 {
-                font-size: 1.5rem;
-            }
-
-            .part3 .overlay p {
-                font-size: 0.9rem;
-            }
-        }
-/*****************************************************Testimonial****************************************/
+h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+.part3 .overlay p{
+    color: inherit;
+    margin: 0 auto;
+}
+.learn-more{
+    color: #0047ab;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 3px solid #0047ab;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.learn-more:hover{
+    color: #003380;
+    border-bottom-color: #003380;
+    transform: translateY(-2px);
+}
+/***Responsive part***/
+@media (max-width: 968px){
+.section-container{
+    grid-template-columns: 1fr;
+}
+.part1 .text-content{
+    order: 2;
+}
+.part1 .image-content{
+    order: 1;
+    min-height: 50vh;
+}
+.part2 .image-content{
+    order: 1;
+    min-height: 50vh;
+}
+.part2 .text-content{
+    order: 2;
+}
+.part3{
+    grid-template-columns: 1fr;
+    min-height: auto;
+}
+.part3 .subsection{
+    min-height: 50vh;
+    max-width: 100%;
+}
+.part3 .image-container {
+    width: 100%;
+}
+h1, h2 {
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.75rem;
+    }
+}
+@media (max-width: 576px){
+h1, h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.part3 .overlay{
+    padding: 30px 20px;
+} 
+.part3 .overlay h3{
+    font-size: 1.5rem;
+}
+.part3 .overlay p{
+    font-size: 0.9rem;
+    }
+}
+/*******************************************************************************Testimonials***********************************************************/
 .testimonials-section {
             max-width: 1200px;
             margin: 0 auto;
