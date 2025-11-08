@@ -581,6 +581,35 @@ footer{
     font-size: 0.95rem;
     }
 }
-/**********************************************End******************************************************/
+/**********************************************scroll button behavior******************************************************/
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #1a5f3f;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background-color: #062c1ace;
+            transform: translateY(-5px);
+        }
 
        
